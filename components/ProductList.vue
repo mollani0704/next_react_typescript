@@ -1,15 +1,5 @@
 <template>
   <div class="product-list">
-    <!-- <div
-      class="product-card"
-      v-for="product in products"
-      :key="product.id"
-      @click="goToDetail(product.id)"
-    >
-      <img :src="product.image" :alt="product.name" />
-      <h3>{{ product.name }}</h3>
-      <p>{{ product.price.toLocaleString() }}원</p>
-    </div> -->
     <NuxtLink
       class="product-card"
       v-for="product in products"

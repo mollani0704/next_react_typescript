@@ -1,18 +1,4 @@
 <template>
-  <div>
-    <h1>상품 상세 테스트</h1>
-    <p>ID: {{ id }}</p>
-  </div>
-</template>
-
-<script setup lang="ts">
-import {useRoute} from 'vue-router';
-
-const route = useRoute();
-const id = route.params.id;
-console.log('id', id);
-</script>
-<!-- <template>
   <div v-if="product">
     <h2>{{ product.name }}</h2>
     <img :src="product.image" :alt="product.name" />
@@ -31,6 +17,7 @@ const route = useRoute();
 const id = Number(route.params.id);
 
 const product = dummyProducts.find(p => p.id === id);
+console.log('product', product);
 </script>
 
 <style scoped>
@@ -40,4 +27,4 @@ img {
   border-radius: 8px;
   margin: 1rem 0;
 }
-</style> -->
+</style>
