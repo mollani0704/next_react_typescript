@@ -1,0 +1,178 @@
+[
+  {
+    "id": 1,
+    "tag": "추천상품",
+    "imageUrl": "/images/banner1.jpg",
+    "brand": "브랜드명1",
+    "name": "상품명 텍스트1",
+    "price": "00% 000,000원",
+    "rating": 4.6,
+    "reviewCount": 10,
+    "liked": false
+  },
+  {
+    "id": 2,
+    "tag": "추천상품",
+    "imageUrl": "/images/banner2.jpg",
+    "brand": "브랜드명2",
+    "name": "상품명 텍스트2",
+    "price": "00% 000,000원",
+    "rating": 4.6,
+    "reviewCount": 10,
+    "liked": false
+  },
+  {
+    "id": 3,
+    "tag": "추천상품",
+    "imageUrl": "/images/banner3.jpg",
+    "brand": "브랜드명3",
+    "name": "상품명 텍스트3",
+    "price": "00% 000,000원",
+    "rating": 4.6,
+    "reviewCount": 10,
+    "liked": false
+  },
+  {
+    "id": 4,
+    "tag": "추천상품",
+    "imageUrl": "/images/banner1.jpg",
+    "brand": "브랜드명4",
+    "name": "상품명 텍스트4",
+    "price": "00% 000,004원",
+    "rating": 4.6,
+    "reviewCount": 4,
+    "liked": false
+  },
+  {
+    "id": 5,
+    "tag": "추천상품",
+    "imageUrl": "/images/banner2.jpg",
+    "brand": "브랜드명5",
+    "name": "상품명 텍스트5",
+    "price": "00% 000,000원",
+    "rating": 4.6,
+    "reviewCount": 5,
+    "liked": false
+  },
+  {
+    "id": 6,
+    "tag": "추천상품",
+    "imageUrl": "/images/banner3.jpg",
+    "brand": "브랜드명6",
+    "name": "상품명 텍스트6",
+    "price": "00% 000,000원",
+    "rating": 4.6,
+    "reviewCount": 6,
+    "liked": false
+  },
+  {
+    "id": 7,
+    "tag": "추천상품",
+    "imageUrl": "/images/banner1.jpg",
+    "brand": "브랜드명7",
+    "name": "상품명 텍스트7",
+    "price": "00% 000,000원",
+    "rating": 4.6,
+    "reviewCount": 7,
+    "liked": false
+  },
+  {
+    "id": 8,
+    "tag": "추천상품",
+    "imageUrl": "/images/banner2.jpg",
+    "brand": "브랜드명8",
+    "name": "상품명 텍스트8",
+    "price": "00% 000,000원",
+    "rating": 4.6,
+    "reviewCount": 8,
+    "liked": false
+  },
+  {
+    "id": 9,
+    "tag": "추천상품",
+    "imageUrl": "/images/banner3.jpg",
+    "brand": "브랜드명9",
+    "name": "상품명 텍스트9",
+    "price": "00% 000,000원",
+    "rating": 4.6,
+    "reviewCount": 9,
+    "liked": false
+  },
+  {
+    "id": 10,
+    "tag": "추천상품",
+    "imageUrl": "/images/banner1.jpg",
+    "brand": "브랜드명10",
+    "name": "상품명 텍스트10",
+    "price": "00% 000,000원",
+    "rating": 4.6,
+    "reviewCount": 10,
+    "liked": false
+  },
+  {
+    "id": 11,
+    "tag": "추천상품",
+    "imageUrl": "/images/banner2.jpg",
+    "brand": "브랜드명11",
+    "name": "상품명 텍스트11",
+    "price": "00% 000,000원",
+    "rating": 4.6,
+    "reviewCount": 11,
+    "liked": false
+  },
+  {
+    "id": 12,
+    "tag": "추천상품",
+    "imageUrl": "/images/banner3.jpg",
+    "brand": "브랜드명12",
+    "name": "상품명 텍스트12",
+    "price": "00% 000,000원",
+    "rating": 4.6,
+    "reviewCount": 12,
+    "liked": false
+  },
+  {
+    "id": 13,
+    "tag": "추천상품",
+    "imageUrl": "/images/banner1.jpg",
+    "brand": "브랜드명13",
+    "name": "상품명 텍스트13",
+    "price": "00% 000,000원",
+    "rating": 4.6,
+    "reviewCount": 13,
+    "liked": false
+  },
+  {
+    "id": 14,
+    "tag": "추천상품",
+    "imageUrl": "/images/banner2.jpg",
+    "brand": "브랜드명14",
+    "name": "상품명 텍스트14",
+    "price": "00% 000,000원",
+    "rating": 4.6,
+    "reviewCount": 14,
+    "liked": false
+  },
+  {
+    "id": 15,
+    "tag": "추천상품",
+    "imageUrl": "/images/banner3.jpg",
+    "brand": "브랜드명15",
+    "name": "상품명 텍스트15",
+    "price": "00% 000,000원",
+    "rating": 4.6,
+    "reviewCount": 15,
+    "liked": false
+  },
+  {
+    "id": 16,
+    "tag": "추천상품",
+    "imageUrl": "/images/banner3.jpg",
+    "brand": "브랜드명16",
+    "name": "상품명 텍스트16",
+    "price": "00% 000,000원",
+    "rating": 4.6,
+    "reviewCount": 16,
+    "liked": false
+  }
+]
