@@ -1,7 +1,10 @@
 import BenefitSection from '@/components/products/detail/BenenfitSection';
 import CTABar from '@/components/products/detail/CTABar';
+import DetailTabs from '@/components/products/detail/DetailTabs';
 import LikeToast from '@/components/products/detail/LikeToast';
 import {Coupon} from '@/lib/coupon';
+import PurchaseDock from '@/components/products/detail/PurchaseDock';
+import type {OptionGroup} from '@/components/products/detail/PurchaseSheet';
 
 type productDetail = import('@/lib/productDetail').ProductDetail;
 type PageProps = {
@@ -72,6 +75,28 @@ export default async function ProductDetailPage({params}: PageProps) {
       expiresAt: '2025-12-31',
     },
   ];
+  const optionGroups: OptionGroup[] = [
+    {
+      id: 'color',
+      name: '색상',
+      required: true,
+      values: [
+        {id: 'red', label: '레드', stock: 5},
+        {id: 'blue', label: '블루', stock: 0}, // 품절 표시/비활성 예시
+        {id: 'black', label: '블랙', stock: 20},
+      ],
+    },
+    {
+      id: 'size',
+      name: '사이즈',
+      required: true,
+      values: [
+        {id: 's', label: 'S'},
+        {id: 'm', label: 'M'},
+        {id: 'l', label: 'L'},
+      ],
+    },
+  ];
   return (
     <>
       <section className="p-4 space-y-4">
@@ -139,85 +164,17 @@ export default async function ProductDetailPage({params}: PageProps) {
         ) : null} */}
 
         {/* 상세 컨텐츠(요약 탭 헤더 느낌) */}
-        <div className="space-y-2">
-          <a
-            href="#detail"
-            className="block rounded-md border bg-white p-3 text-sm"
-          >
-            상세정보 펼쳐보기
-          </a>
-          <div className="rounded-md border bg-white p-3 text-sm">
-            <div className="mb-2 font-medium">상품후기</div>
-            <div className="text-[12px] text-muted-foreground">
-              평점 {detail.reviewRate?.toFixed?.(1) ?? '0.0'} / 리뷰 {reviewCnt}
-              개
-            </div>
-          </div>
-        </div>
-
-        {/* 상세 HTML */}
-        <div id="detail" className="space-y-3">
-          {/* 상단 추가영역 */}
-          {detail.baseInfo.contentHeader && (
-            <div
-              className="rounded-md border bg-white p-3 text-sm"
-              dangerouslySetInnerHTML={{__html: detail.baseInfo.contentHeader}}
-            />
-          )}
-
-          {/* 실제 상세 */}
-          <div
-            className="rounded-md border bg-white p-3 text-sm leading-6"
-            dangerouslySetInnerHTML={{
-              __html: detail.baseInfo.content || '<p>상세 내용이 없습니다.</p>',
-            }}
-          />
-
-          {/* 고시/가이드 섹션 (간단 details로 구현) */}
-          <details className="rounded-md border bg-white p-3 text-sm">
-            <summary className="cursor-pointer select-none font-medium">
-              배송 안내
-            </summary>
-            <div
-              className="mt-2 text-[13px]"
-              dangerouslySetInnerHTML={{
-                __html: detail.deliveryGuide || '<p>배송 안내가 없습니다.</p>',
-              }}
-            />
-          </details>
-
-          <details className="rounded-md border bg-white p-3 text-sm">
-            <summary className="cursor-pointer select-none font-medium">
-              A/S 안내
-            </summary>
-            <div
-              className="mt-2 text-[13px]"
-              dangerouslySetInnerHTML={{
-                __html:
-                  detail.afterServiceGuide || '<p>A/S 안내가 없습니다.</p>',
-              }}
-            />
-          </details>
-
-          <details className="rounded-md border bg-white p-3 text-sm">
-            <summary className="cursor-pointer select-none font-medium">
-              교환/환불 안내
-            </summary>
-            <div
-              className="mt-2 text-[13px]"
-              dangerouslySetInnerHTML={{
-                __html:
-                  (detail.exchangeGuide || '') + (detail.refundGuide || ''),
-              }}
-            />
-          </details>
-        </div>
+        <DetailTabs detail={detail} />
 
         {/* 페이지 하단 여백 (고정 CTA와 겹치지 않게) */}
         <div className="h-20" />
       </section>
       <LikeToast likeCnt={likeCnt} productNo={detail.baseInfo.productNo} />
-      <CTABar />
+      {/* <CTABar /> */}
+      <PurchaseDock
+        basePrice={detail.price.salePrice}
+        optionGroups={optionGroups}
+      />
     </>
   );
 }

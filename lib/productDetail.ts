@@ -19,7 +19,92 @@ export const productDetailMock = {
     manufactureYmdt: '2024-07-30T05:41:07.281778747',
     expirationYmdt: '2026-07-30T05:41:07.281785838',
     contentHeader: '<h3>상세 상단 안내</h3>',
-    content: '<div>상품상세 HTML</div>',
+    content: `
+<section style="padding:8px 0">
+  <h3 style="font-size:16px;margin:0 0 8px 0;">프리미엄 코튼 티셔츠</h3>
+  <p style="color:#555;line-height:1.7;margin:0 0 12px 0;">
+    부드러운 촉감과 깔끔한 실루엣의 데일리 티셔츠입니다. 사계절 내내
+    단독/레이어드로 활용 가능하며, 변형을 최소화한 넥 라인으로 오래도록
+    깔끔한 핏을 유지해 줍니다.
+  </p>
+
+  <ul style="margin:0 0 12px 18px;color:#444;line-height:1.7;">
+    <li>20수 코튼 100%, 소프트 워싱 가공</li>
+    <li>넥 라인 변형 방지 립 원단</li>
+    <li>드롭 숄더, 스탠다드 핏</li>
+    <li>남녀 공용, 6가지 컬러</li>
+  </ul>
+
+  <!-- 착용컷 -->
+  <img
+    src="http://images.unsplash.com/photo-1520975916090-3105956cec88?auto=format&fit=crop&w=1200&q=80"
+    alt="착용컷"
+    style="width:100%;height:auto;display:block;margin:12px 0;border-radius:8px;"
+  />
+
+  <h4 style="font-size:15px;margin:12px 0 6px 0;">사이즈 가이드</h4>
+  <table style="width:100%;border-collapse:collapse;font-size:13px;">
+    <thead>
+      <tr>
+        <th style="text-align:left;border-bottom:1px solid #eee;padding:6px 4px;">사이즈</th>
+        <th style="text-align:right;border-bottom:1px solid #eee;padding:6px 4px;">총장</th>
+        <th style="text-align:right;border-bottom:1px solid #eee;padding:6px 4px;">가슴단면</th>
+        <th style="text-align:right;border-bottom:1px solid #eee;padding:6px 4px;">어깨단면</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="padding:6px 4px;border-bottom:1px solid #f2f2f2;">S</td>
+        <td style="padding:6px 4px;text-align:right;border-bottom:1px solid #f2f2f2;">66</td>
+        <td style="padding:6px 4px;text-align:right;border-bottom:1px solid #f2f2f2;">50</td>
+        <td style="padding:6px 4px;text-align:right;border-bottom:1px solid #f2f2f2;">44</td>
+      </tr>
+      <tr>
+        <td style="padding:6px 4px;border-bottom:1px solid #f2f2f2;">M</td>
+        <td style="padding:6px 4px;text-align:right;border-bottom:1px solid #f2f2f2;">70</td>
+        <td style="padding:6px 4px;text-align:right;border-bottom:1px solid #f2f2f2;">54</td>
+        <td style="padding:6px 4px;text-align:right;border-bottom:1px solid #f2f2f2;">48</td>
+      </tr>
+      <tr>
+        <td style="padding:6px 4px;border-bottom:1px solid #f2f2f2;">L</td>
+        <td style="padding:6px 4px;text-align:right;border-bottom:1px solid #f2f2f2;">74</td>
+        <td style="padding:6px 4px;text-align:right;border-bottom:1px solid #f2f2f2;">58</td>
+        <td style="padding:6px 4px;text-align:right;border-bottom:1px solid #f2f2f2;">52</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4 style="font-size:15px;margin:16px 0 6px 0;">세탁 및 취급 주의사항</h4>
+  <ol style="margin:0 0 12px 18px;color:#444;line-height:1.7;">
+    <li>찬물에 단독 손세탁을 권장합니다.</li>
+    <li>표백제 사용을 금합니다.</li>
+    <li>건조기 사용 시 수축이 있을 수 있습니다.</li>
+  </ol>
+
+  <img
+    src="http://images.unsplash.com/photo-1515895309285-129c8a62752d?auto=format&fit=crop&w=1200&q=80"
+    alt="디테일컷"
+    style="width:100%;height:auto;display:block;margin:12px 0;border-radius:8px;"
+  />
+
+  <p style="color:#666;line-height:1.7;margin:8px 0;">
+    * 촬영 환경/모니터 환경에 따라 실제 색상과 차이가 있을 수 있습니다.
+  </p>
+
+  <p style="color:#555;line-height:1.8;margin:10px 0;">
+    소재 정보: 면 100%. 두께감: 보통 · 비침: 없음 · 촬영 모델 178cm / L 착용.
+    고객 만족도를 위해 원단 수급/마감 공정은 수시로 개선되고 있으며,
+    세부 스펙은 생산 시기마다 ±1~2cm 오차가 있을 수 있습니다.
+    반품/교환 시에는 상품 택을 제거하지 말아 주세요.
+  </p>
+
+  <img
+    src="http://picsum.photos/seed/homeniq-banner/1200/600"
+    alt="프로모션 배너"
+    style="width:100%;height:auto;display:block;margin:12px 0;border-radius:8px;"
+  />
+</section>
+`.trim(),
     contentFooter: '<p>하단 안내</p>',
     dutyInfo:
       '{"categoryNo":2,"categoryName":"구두/신발","contents":[{"제품 주소재":"상품상세 참조"},{"색상":"상품상세 참조"},{"치수":"상품상세 참조"},{"제조자":"상품상세 참조"},{"제조국":"상품상세 참조"},{"취급시 주의사항":"상품상세 참조"},{"품질보증기준":"상품상세 참조"},{"A/S 책임자와 전화번호":"상품상세 참조"}]}',
